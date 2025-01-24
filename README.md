@@ -31,6 +31,8 @@ F = {A, F, K, N}
 
 Solución = {i, B, D, C, G, H, I, J, L, M, e}
 
+![Diagrama 1](/Ej1_BusquedaProfundidad/img/Diagrama1.1.png)
+
 ## Con límite de profundidad 5
 F = {**i**}  →  Test(i)  → C = {i}
 
@@ -66,6 +68,8 @@ C = {i, B, D, C, E, G, H, F, A, J, K, L, N, e}
 F = {I, M, Ñ}
 
 Solución = {i, A, J, K, L, N, e}
+
+![Diagrama 2](/Ej1_BusquedaProfundidad/img/Diagrama1.2.png)
 
 
 
