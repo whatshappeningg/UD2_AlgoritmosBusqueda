@@ -1,75 +1,43 @@
-# Ejercicio 1: Algoritmo de búsqueda en profundidad
-## Sin límite de profundidad
-F = {**i**}  →  Test(i)  → C = {i}
+# UD2: Algoritmos de búsqueda
+## Conceptos básicos
 
-F = {A, **B**}  →  Test(B)  → C = {i, B}
+**Problema:**
+- Estado: Configuración cocnreta del mundo.
+- Estado inicial: Denominado como ``i``, desde aquí se empieza a operar.
+- Estado objetivo: Denominado como ``e``, aquí es a donde se quiere llegar.
+- Función sucesora: Acciones posibles, varían según el problema. (Ej.: ↑↓ ←→)
+- Coste: Facultativo. Implica un valor añadido al cambiar de estado. (Ej.: ↑↓ +1, ←→ +2)
+- Heurística: Facultativo. Característico de los algoritmos de [búsqueda informada](#tipos-de-búsquedas).
 
-F = {A, C, **D**}  →  Test(D)  → C = {i, B, D}
+**Algoritmo:**
+- Frontera: Conjunto de nodos no expandidos. (Ej.: ``F = {A, F, G}``)
+- Explorados: Conjunto de nodos expandidos. (Ej.: ``C = {i, B, D, C, E}``)
+- Solución: Conjunto de estados a seguir para llegar del inicial al objetivo. (Ej.: ``Sol. = {i, A, B, D, e}``)
+- Test objetivo: Se usa para saber si el estado actual es el objetivo. (Ej.: ``Test(D)``)
 
-F = {A, **C**}  →  Test(C)  → C = {i, B, D, C}
+**Solución:**
 
-F = {A, **E**}  →  Test(E)  → C = {i, B, D, C, E}
+**Árbol de deciciones:**
+- Utiliza el método GRAFO.
+- Estado inicial + Función sucesora = Espacio de estados
+- 
 
-F = {A, F, **G**}  →  Test(G)  → C = {i, B, D, C, G, E}
 
-F = {A, F, **H**}  →  Test(H)  → C = {i, B, D, C, G, H}
+### Tipos de búsquedas
+**No informada:** No se tiene información complementaria de los nodos, no dejan nodos sin explorar y no repiten ninguno.
 
-F = {A, F, **I**}  →  Test(I)  → C = {i, B, D, C, G, H, I}
+Algoritmos:
+- Búsqueda en anchura
+- Búsqueda de coste uniforme
+- Búsqueda en profundidad
+- Búsqueda bidireccional
 
-F = {A, F, **J**}  →  Test(J)  → C = {i, B, D, C, G, H, I, J}
+**Informada:** Se iene información complementaria de los nodos: la heurística. Viene dada por una función ``h(n)`` que indica cuán prometedor es cierto nodo y qué decisión tomar a continuación.
 
-F = {A, F, K, **L**}  →  Test(L)  → C = {i, B, D, C, G, H, I, J, L}
-
-F = {A, F, K, **M**}  →  Test(M)  → C = {i, B, D, C, G, H, I, J, L, M}
-
-F = {A, F, K, N, **e**}  →  Test(e)  → C = {i, B, D, C, G, H, I, J, L, M, e}
-
-### Resultado
-C = {i, B, D, C, G, H, I, J, L, M, e}
-
-F = {A, F, K, N}
-
-Solución = {i, B, D, C, G, H, I, J, L, M, e}
-
-![Diagrama 1](/img/Diagrama1.1.png)
-
-## Con límite de profundidad 5
-F = {**i**}  →  Test(i)  → C = {i}
-
-F = {A, **B**}  →  Test(B)  → C = {i, B}
-
-F = {A, C, **D**}  →  Test(D)  → C = {i, B, D}
-
-F = {A, **C**}  →  Test(C)  → C = {i, B, D, C}
-
-F = {A, **E**}  →  Test(E)  → C = {i, B, D, C, E}
-
-F = {A, F, **G**}  →  Test(G)  → C = {i, B, D, C, E, G}
-
-F = {A, F, **H**}  →  Test(H)  → C = {i, B, D, C, E, G, H}
-
-F = {A, **F**}  →  Test(F)  → C = {i, B, D, C, E, G, H, F}
-
-F = {**A**}  →  Test(A)  → C = {i, B, D, C, E, G, H, F, A}
-
-F = {I, **J**}  →  Test(J)  → C = {i, B, D, C, E, G, H, F, A, J}
-
-F = {I, **K**}  →  Test(K)  → C = {i, B, D, C, E, G, H, F, A, J, K}
-
-F = {I, **L**}  →  Test(L)  → C = {i, B, D, C, E, G, H, F, A, J, K, L}
-
-F = {I, M, **N**}  →  Test(N)  → C = {i, B, D, C, E, G, H, F, A, J, K, L, N}
-
-F = {I, M, Ñ, **e**}  →  Test(e)  → C = {i, B, D, C, E, G, H, F, A, J, K, L, N, e}
-
-### Resultado
-C = {i, B, D, C, E, G, H, F, A, J, K, L, N, e}
-
-F = {I, M, Ñ}
-
-Solución = {i, A, J, K, L, N, e}
-
-![Diagrama 2](/img/Diagrama1.2.png)
+Algoritmos:
+- Método de ascensión de colinas
+- Búsqueda por el mejor nodo
+- Algoritmo A y A*
 
 
 
