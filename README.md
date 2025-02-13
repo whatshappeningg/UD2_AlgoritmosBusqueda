@@ -2,18 +2,22 @@
 ## Conceptos básicos
 
 **Problema:**
+- Mundo: Espacio operable.
 - Estado: Configuración cocnreta del mundo.
 - Estado inicial: Denominado como ``i``, desde aquí se empieza a operar.
 - Estado objetivo: Denominado como ``e``, aquí es a donde se quiere llegar.
 - Función sucesora: Acciones posibles, varían según el problema. (Ej.: ↑↓ ←→)
-- Coste: Facultativo. Implica un valor añadido al cambiar de estado. (Ej.: ↑↓ +1, ←→ +2)
-- Heurística: Facultativo. Característico de los algoritmos de [búsqueda informada](#tipos-de-búsquedas).
+- Coste: Facultativo, implica un valor añadido al cambiar de estado. (Ej.: ↑↓ +1, ←→ +2)
+- Heurística: Facultativo, característico de los algoritmos de [búsqueda informada](#tipos-de-búsquedas).
 
 **Algoritmo:**
 - Frontera: Conjunto de nodos no expandidos. (Ej.: ``F = {A, F, G}``)
 - Explorados: Conjunto de nodos expandidos. (Ej.: ``C = {i, B, D, C, E}``)
 - Solución: Conjunto de estados a seguir para llegar del inicial al objetivo. (Ej.: ``Sol. = {i, A, B, D, e}``)
 - Test objetivo: Se usa para saber si el estado actual es el objetivo. (Ej.: ``Test(D)``)
+- Métodos: Ayudan a definir qué nodo del conjunto frontera expandir a continuación.  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIFO: 'First In First Out', el elemento que más tiempo lleva en el conjunto. (Ej.: ``F = {A, F, G}`` => ``A``)  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIFO: 'Last In Fist Out', el elemento que menos tiempo lleva en el conjunto. (Ej.: ``F = {A, F, G}`` => ``G``)
 
 **Solución:**
 
@@ -26,18 +30,18 @@
 ### Tipos de búsquedas
 **No informada:** No se tiene información complementaria de los nodos, no dejan nodos sin explorar y no repiten ninguno.
 
-Algoritmos:
-- Búsqueda en anchura
-- Búsqueda de coste uniforme
-- Búsqueda en profundidad
-- Búsqueda bidireccional
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Algoritmos:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Búsqueda en anchura  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Búsqueda de coste uniforme ([Ejercicio](/CosteUniforme.md))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Búsqueda en profundidad ([Ejercicio](/Ej1_BúsquedaProfundidad.md))  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Búsqueda bidireccional
 
-**Informada:** Se iene información complementaria de los nodos: la heurística. Viene dada por una función ``h(n)`` que indica cuán prometedor es cierto nodo y qué decisión tomar a continuación.
+**Informada:** Se iene información complementaria de los nodos: la heurística. Viene dada por una función ``h(n)`` que indica cuán prometedor es cierto nodo y qué decisión tomar a continuación. (Ej.: Cercanía del potencial nodo a ``e``)
 
-Algoritmos:
-- Método de ascensión de colinas
-- Búsqueda por el mejor nodo
-- Algoritmo A y A*
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Algoritmos:  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Método de ascensión de colinas  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Búsqueda por el mejor nodo  
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;- Algoritmo A y A* ([Ejercicio](/A_A*.md))
 
 
 
