@@ -1,4 +1,7 @@
 # Algoritmos A y A*
+Prioridades:
+1. Menor heurística
+2. FIFO
 ## Nomenclatura
 $^{g}$ N f $^{h}$
 
