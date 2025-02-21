@@ -1,4 +1,6 @@
-# Ejercicio 1: Algoritmo de búsqueda en profundidad
+# Algoritmo de búsqueda en profundidad
+Prioridad de movimientos: ↑ ↓  ← →  
+Método: LIFO
 ## Sin límite de profundidad
 F = {**i**}  →  Test(i)  → C = {i}
 
