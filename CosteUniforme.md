@@ -1,4 +1,7 @@
 # Algoritmo de búsqueda por coste uniforme
+Prioridades:
+1. Menor coste
+2. FIFO
 ## Nomenclatura
 N (np) $^{g}$
 
