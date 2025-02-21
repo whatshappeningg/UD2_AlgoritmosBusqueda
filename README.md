@@ -18,18 +18,21 @@
 - Métodos: Ayudan a definir qué nodo del conjunto frontera expandir a continuación.  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;FIFO: 'First In First Out', el elemento que más tiempo lleva en el conjunto. (Ej.: ``F = {A, F, G}`` => ``A``)  
 &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;LIFO: 'Last In Fist Out', el elemento que menos tiempo lleva en el conjunto. (Ej.: ``F = {A, F, G}`` => ``G``)
-- Nodo: Estado con características añadidas.
-
-**Solución:**
 
 **Árbol de deciciones:**
 - Utiliza el método GRAFO.
 - Estado inicial + Función sucesora = Espacio de estados
+- Nodo: Estado con características añadidas. (Ej.: $^{1}$ B 6 $^{5}$ )
 - Nodo padre / raíz: Nodo inicial (``i``)
 - Nodo hoja: Nodo no expansible.
 - Backtraking: Escalar por las ramas del árbol hasta el anterior nodo sin expandir.
 - Profundidad: Número de nodos a expandir antes de hacer backtraking. Variable.
 
+**Solución:**
+- Conjunto frontera.
+- Conjunto explorados.
+- Camino concreto de nodos desde ``i`` hasta ``e``.
+- Árbol de decisiones.
 
 ### Tipos de búsquedas
 **No informada:** No se tiene información complementaria de los nodos, no dejan nodos sin explorar y no repiten ninguno.
