@@ -44,3 +44,5 @@ C = { Ou $^{0}$, Po (Ou) $^{175}$, Be (Ou) $^{236}$, Le (Po) $^{288}$, Pa (Be) $
 F = { Ca (Os) $^{641}$ }
 
 Solución = { Ou $^{0}$, Be (Ou) $^{236}$, Va (Be) $^{348}$, Ar (Va) $^{443}$, Os (Ar) $^{501}$, Ca (Os) $^{641}$ }
+
+![Diagrama 2](/img/Diagrama1.3.png)
