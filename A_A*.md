@@ -47,3 +47,11 @@ F = { $^{5}$ H 10 $^{5}$, $^{8}$ L 10 $^{2}$ }
 Solución = { $^{0}$ i 4 $^{4}$, $^{1}$ A 4 $^{3}$, $^{3}$ D 7 $^{4}$, $^{4}$ G 7 $^{3}$, $^{5}$ I 7 $^{2}$, $^{7}$ K 8 $^{1}$, $^{9}$ e 9 $^{9}$ }
 
 ![Diagrama 3](/img/Diagrama1.4.png)
+
+## Cuestiones
+
+**La heurística utilizada en el algoritmo A, ¿es admisible? ¿Por qué?**  
+Sí es admisible porque la heurística nunca sobreestima el coste.
+
+***¿Podemos decir que el algoritmo es A*?***  
+Sí, sería un algoritmo A*.
