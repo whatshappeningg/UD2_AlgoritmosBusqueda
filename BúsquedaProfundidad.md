@@ -72,3 +72,13 @@ F = {I, M, Ñ}
 Solución = {i, A, J, K, L, N, e}
 
 ![Diagrama 2](/img/Diagrama1.2.png)
+
+## Cuestiones
+**Describe qué sucede.**  
+Con una profundidad de 5 el algorirmo haría backtraking justo antes de encontrar una solución, sin llegar a ella.
+
+**Indica el tipo de fracaso (si lo hay).**
+Sería un fracaso por valor de corte porque la solución no se encuentra dentro del límite de profundidad establecido.
+
+**¿Qué sucede si aumentamos el límite de profundidad a 6?**
+Que el algoritmo sí encontraría una solución, como en el ejercicio anterior.
