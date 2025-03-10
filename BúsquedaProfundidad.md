@@ -31,7 +31,7 @@ C = {i, B, D, C, G, H, I, J, L, M, e}
 
 F = {A, F, K, N}
 
-Solución = {i, B, D, C, G, H, I, J, L, M, e}
+Solución = {i, B, C, E, G, H, I, J, L, M, e}
 
 ![Diagrama 1](/img/Diagrama1.1.png)
 
